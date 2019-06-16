@@ -1,0 +1,111 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jun 10 11:33:01 2019] ***
+compiled with version: 5.4.0 20160609 on 10 June 2019 03:27:52
+os: Linux-4.4.0-31-generic #50-Ubuntu SMP Wed Jul 13 00:07:12 UTC 2016
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/python/Desktop/Django项目/Teacher_Project/meiduo_project/meiduo_mall/meiduo_mall
+writing pidfile to uwsgi.pid
+detected binary path: /home/python/.virtualenvs/meiduo_mall/bin/uwsgi
+chdir() to /home/python/Desktop/Django项目/Teacher_Project/meiduo_project/meiduo_mall
+your processes number limit is 23645
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 3
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1015730
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1015730 pid: 93655 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 93655)
+spawned uWSGI worker 1 (pid: 93657, cores: 2)
+spawned uWSGI worker 2 (pid: 93658, cores: 2)
+spawned uWSGI worker 3 (pid: 93660, cores: 2)
+spawned uWSGI worker 4 (pid: 93661, cores: 2)
+[pid: 93660|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 867 bytes} [Mon Jun 10 03:40:21 2019] GET /carts/ => generated 5007 bytes in 1594 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 93657|app: 0|req: 1/2] 127.0.0.1 () {44 vars in 871 bytes} [Mon Jun 10 03:40:25 2019] GET /info/ => generated 6192 bytes in 1082 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 93658|app: 0|req: 1/3] 127.0.0.1 () {44 vars in 888 bytes} [Mon Jun 10 03:40:37 2019] GET /orders/info/1/ => generated 7357 bytes in 1417 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 93657|app: 0|req: 2/4] 127.0.0.1 () {46 vars in 919 bytes} [Mon Jun 10 04:40:30 2019] GET /orders/info/1/ => generated 7357 bytes in 534 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 93657|app: 0|req: 3/5] 127.0.0.1 () {44 vars in 879 bytes} [Mon Jun 10 04:40:37 2019] GET /info/ => generated 6192 bytes in 39 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 93658|app: 0|req: 2/6] 127.0.0.1 () {44 vars in 888 bytes} [Mon Jun 10 04:40:41 2019] GET /orders/info/1/ => generated 7357 bytes in 368 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 93657|app: 0|req: 4/7] 127.0.0.1 () {44 vars in 889 bytes} [Mon Jun 10 04:40:42 2019] GET /addresses/ => generated 10075 bytes in 200 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 93661|app: 0|req: 1/8] 127.0.0.1 () {44 vars in 883 bytes} [Mon Jun 10 04:40:45 2019] GET /password/ => generated 5467 bytes in 1191 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 93660|app: 0|req: 2/9] 127.0.0.1 () {44 vars in 892 bytes} [Mon Jun 10 04:40:50 2019] GET /orders/info/1/ => generated 7357 bytes in 459 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 93657|app: 0|req: 5/10] 127.0.0.1 () {44 vars in 964 bytes} [Mon Jun 10 04:40:52 2019] GET /orders/comment/?order_id=20190608085856000000001 => generated 27 bytes in 135 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 93658|app: 0|req: 3/11] 127.0.0.1 () {44 vars in 879 bytes} [Mon Jun 10 04:47:55 2019] GET /info/ => generated 6192 bytes in 103 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 93661|app: 0|req: 2/12] 127.0.0.1 () {44 vars in 877 bytes} [Mon Jun 10 04:48:05 2019] GET /list/115/1/ => generated 27 bytes in 1164 msecs (HTTP/1.1 500) 3 headers in 112 bytes (1 switches on core 1)
+[pid: 93661|app: 0|req: 3/13] 127.0.0.1 () {44 vars in 876 bytes} [Mon Jun 10 04:48:30 2019] GET /search/?q=1 => generated 4563 bytes in 699 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 93658|app: 0|req: 4/14] 127.0.0.1 () {42 vars in 808 bytes} [Mon Jun 10 04:54:10 2019] GET /hot/157/ => generated 479 bytes in 92 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 93661|app: 0|req: 5/15] 127.0.0.1 () {42 vars in 812 bytes} [Mon Jun 10 04:54:10 2019] GET /comment/1/ => generated 976 bytes in 67 msecs (HTTP/1.1 404) 3 headers in 116 bytes (1 switches on core 0)
+[pid: 93661|app: 0|req: 5/16] 127.0.0.1 () {50 vars in 1050 bytes} [Mon Jun 10 04:54:10 2019] POST /browse_histories/ => generated 29 bytes in 147 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 93660|app: 0|req: 3/17] 127.0.0.1 () {44 vars in 877 bytes} [Mon Jun 10 09:24:10 2019] GET /list/115/1/ => generated 19423 bytes in 595 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 93660|app: 0|req: 4/18] 127.0.0.1 () {44 vars in 909 bytes} [Mon Jun 10 09:24:16 2019] GET /list/115/1/?sort=price => generated 19491 bytes in 369 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 93658|app: 0|req: 5/19] 127.0.0.1 () {44 vars in 916 bytes} [Mon Jun 10 09:24:18 2019] GET /list/115/1/?sort=hot => generated 19437 bytes in 473 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 93658|app: 0|req: 6/20] 127.0.0.1 () {50 vars in 1050 bytes} [Mon Jun 10 09:25:10 2019] POST /browse_histories/ => generated 29 bytes in 38 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 93661|app: 0|req: 6/21] 127.0.0.1 () {42 vars in 814 bytes} [Mon Jun 10 09:25:10 2019] GET /comments/1/ => generated 27 bytes in 99 msecs (HTTP/1.1 500) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 93660|app: 0|req: 6/22] 127.0.0.1 () {50 vars in 1050 bytes} [Mon Jun 10 09:25:26 2019] POST /browse_histories/ => generated 29 bytes in 49 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 93660|app: 0|req: 6/23] 127.0.0.1 () {42 vars in 814 bytes} [Mon Jun 10 09:25:26 2019] GET /comments/2/ => generated 27 bytes in 102 msecs (HTTP/1.1 500) 3 headers in 112 bytes (1 switches on core 1)
+[pid: 93661|app: 0|req: 8/24] 127.0.0.1 () {50 vars in 1050 bytes} [Mon Jun 10 09:25:33 2019] POST /browse_histories/ => generated 29 bytes in 72 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 93661|app: 0|req: 8/25] 127.0.0.1 () {42 vars in 814 bytes} [Mon Jun 10 09:25:33 2019] GET /comments/5/ => generated 115 bytes in 64 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 93661|app: 0|req: 9/26] 127.0.0.1 () {52 vars in 1081 bytes} [Mon Jun 10 09:28:29 2019] POST /browse_histories/ => generated 29 bytes in 23 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 93658|app: 0|req: 7/27] 127.0.0.1 () {44 vars in 845 bytes} [Mon Jun 10 09:28:29 2019] GET /comments/5/ => generated 115 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 93657|app: 0|req: 6/28] 127.0.0.1 () {44 vars in 889 bytes} [Mon Jun 10 09:28:53 2019] GET /search/?q=1 => generated 4563 bytes in 273 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 1)
+[pid: 93658|app: 0|req: 8/29] 127.0.0.1 () {50 vars in 1050 bytes} [Mon Jun 10 09:29:10 2019] POST /browse_histories/ => generated 29 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 93657|app: 0|req: 7/30] 127.0.0.1 () {42 vars in 814 bytes} [Mon Jun 10 09:29:10 2019] GET /comments/2/ => generated 27 bytes in 16 msecs (HTTP/1.1 500) 3 headers in 112 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jun 10 17:32:41 2019] ***
+compiled with version: 5.4.0 20160609 on 10 June 2019 03:27:52
+os: Linux-4.4.0-31-generic #50-Ubuntu SMP Wed Jul 13 00:07:12 UTC 2016
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/python/Desktop/Django项目/Teacher_Project/meiduo_project/meiduo_mall/meiduo_mall
+writing pidfile to uwsgi.pid
+detected binary path: /home/python/.virtualenvs/meiduo_mall/bin/uwsgi
+chdir() to /home/python/Desktop/Django项目/Teacher_Project/meiduo_project/meiduo_mall
+your processes number limit is 23645
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8001).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jun 10 17:35:13 2019] ***
+compiled with version: 5.4.0 20160609 on 10 June 2019 03:27:52
+os: Linux-4.4.0-31-generic #50-Ubuntu SMP Wed Jul 13 00:07:12 UTC 2016
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/python/Desktop/Django项目/Teacher_Project/meiduo_project/meiduo_mall/meiduo_mall
+writing pidfile to uwsgi.pid
+detected binary path: /home/python/.virtualenvs/meiduo_mall/bin/uwsgi
+chdir() to /home/python/Desktop/Django项目/Teacher_Project/meiduo_project/meiduo_mall
+your processes number limit is 23645
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8001).
+bind(): Address already in use [core/socket.c line 769]
+[pid: 93661|app: 0|req: 10/31] 127.0.0.1 () {44 vars in 867 bytes} [Mon Jun 10 09:37:38 2019] GET /carts/ => generated 5007 bytes in 40 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 93658|app: 0|req: 9/32] 127.0.0.1 () {44 vars in 889 bytes} [Mon Jun 10 09:37:40 2019] GET /orders/info/1/ => generated 7368 bytes in 214 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 93657|app: 0|req: 8/33] 127.0.0.1 () {44 vars in 964 bytes} [Mon Jun 10 09:37:42 2019] GET /orders/comment/?order_id=20190610064050000000001 => generated 27 bytes in 25 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 1)
+[pid: 93661|app: 0|req: 11/34] 127.0.0.1 () {44 vars in 879 bytes} [Mon Jun 10 09:37:47 2019] GET /info/ => generated 6192 bytes in 41 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 93658|app: 0|req: 10/35] 127.0.0.1 () {44 vars in 872 bytes} [Mon Jun 10 09:37:49 2019] GET /carts/ => generated 5007 bytes in 38 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 93657|app: 0|req: 9/36] 127.0.0.1 () {44 vars in 882 bytes} [Mon Jun 10 09:37:53 2019] GET /search/?q=1 => generated 4563 bytes in 75 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 93657|app: 0|req: 10/37] 127.0.0.1 () {44 vars in 883 bytes} [Mon Jun 10 09:43:28 2019] GET /orders/info/1/ => generated 7368 bytes in 213 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 93658|app: 0|req: 11/38] 127.0.0.1 () {44 vars in 964 bytes} [Mon Jun 10 09:43:30 2019] GET /orders/comment/?order_id=20190610064050000000001 => generated 27 bytes in 24 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 93658|app: 0|req: 12/39] 127.0.0.1 () {44 vars in 879 bytes} [Mon Jun 10 09:43:35 2019] GET /info/ => generated 6192 bytes in 13 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 93658|app: 0|req: 13/40] 127.0.0.1 () {44 vars in 880 bytes} [Mon Jun 10 09:43:36 2019] GET /addresses/ => generated 10075 bytes in 77 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 93658|app: 0|req: 14/41] 127.0.0.1 () {44 vars in 883 bytes} [Mon Jun 10 09:43:37 2019] GET /password/ => generated 5467 bytes in 34 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
